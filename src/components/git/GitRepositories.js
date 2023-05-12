@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ImgMediaCard from "./ImgMediaCard";
 
-let sessionStorageGitRepos = JSON.parse(sessionStorage.getItem("GitRepos"));
-
 function GitRepositories() {
-  let [gitRepos, setGitRepos] = useState(
-    sessionStorageGitRepos ? sessionStorageGitRepos : []
-  );
+  const [gitRepos, setGitRepos] = useState([]);
 
   function upload() {
     if (!gitRepos.length) {
@@ -36,8 +32,6 @@ function GitRepositories() {
           description={"Задачи на Vanilla JS c codewars.com"}
           giturl={"https://github.com/VshivcevA/CodeWars"}
         />
-
-        {/* eslint-disable-next-line array-callback-return */}
         {gitRepos
           .sort((a, b) => (a.created_at < b.created_at ? 1 : -1))
           .map((repo) => {
