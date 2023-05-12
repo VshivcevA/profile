@@ -1,152 +1,34 @@
-import React from 'react';
-import styled from "styled-components";
-let DataIntrevals = styled.p`
-  
-  `
-
-function About() {
-  return (
-    <article>
-      <h1>Александр Вшивцев</h1>
-      <p>Пафос, Кипр</p>
-      <p>Почта:&nbsp;
-        <a href={'mailto:vshivcev.alexandr@gmail.com'}>vshivcev.alexandr@gmail.com</a>
-      </p>
-      <p>Телефон:&nbsp;
-        <a href="tel:+35794425213">+35794425213</a>
-      </p>
-      <p>
-        <a href={'https://t.me/grengo94'}>Telegram</a>&nbsp;|&nbsp;
-        <a href={'https://wa.me/79817091960'}>WhatsApp</a>
-      </p>
-      <p>
-        Начинающий frontend разработчик в поиске позиции, на которой смогу продолжить свое развитие как специалиста. Стремлюсь всегда доводить дело до конца, хорошо работаю как в команде, так и самостоятельно. В данный момент изучаю TypeScript, далее планирую погружаться в backend.
-      </p>
-    </article>
-  )
-}
-function Educational() {
-  return (
-    <>
-      <h2>ОБРАЗОВАНИЕ</h2>
-      <ul>
-        <li>
-          <DataIntrevals>Апрель - сентябрь 2022</DataIntrevals>
-          <p>
-            Программа “Профессия frontend разработчик”, HTML Academy
-            За 6 месяцев успешно выполнил три учебных проекта:
-            <ul>
-              <li>
-                Шаблон для интернет-магазина с использованием базового HTML и CSS.
-              </li>
-              <li>
-                Сайт-визитка туристического города где применил сборщик WebPack/GULP, препроцессор SASS/LESS, адаптивную верстку.
-              </li>
-              <li>
-                Сайт-клон соцсети с функциональностью загрузки API, обработки изображений посредством JS.
-              </li>
-            </ul>
-          </p>
-        </li>
-        <li>
-          2012 - 2015
-          <p>
-            Кафедра кораблестроения, CПбГМТУ
-            Изучал дисциплины в сфере инженерного дела, технологии кораблестроения.
-          </p>
-        </li>
-      </ul>
-    </>
-  )
-}
-function Experience() {
-  return (
-    <>
-      <h2>Опыт работы</h2>
-      <ul>
-        <li>
-          <p>
-            Октябрь 2022 — Февраль 2023
-          </p>
-          <p>
-            Intern Frontend Developer<br/>
-            Hawking Bros
-          </p>
-          <p>
-            Совершенствовал полученные навыки в HTML, SCSS, JS.<br/>
-            В команде под руководством наставников осваивал и использовал на практике технологии: React Hooks/Routing/Context/Redux.<br/>
-            Ознакомился с технологиями:  Unit-тестирование, Next.js, статическая типизация, PropTypes.<br/>
-          </p>
-        </li>
-        <li>
-          <p>
-            Декабрь 2021 - март 2022
-          </p>
-          <p>
-            Оператор чпу<br/>
-            НПО “Риэлта”
-          </p>
-          <p>
-            Программировал и налаживал станки с числовым программным управлением. В течение трех месяцев освоил новую профессию, параллельно обучаясь на курсах повышения квалификации, и окончил испытательный срок досрочно.
-          </p>
-        </li>
-        <li>
-          <p>
-            Декабрь 2015 - Ноябрь 2021
-          </p>
-          <p>
-            Начальник водолазной станции/водолаз<br/>
-            Служба поисковых и аварийно-спасательных работ
-          </p>
-          <p>
-
-            Руководил группой из 8 человек, принимал участие и командовал водолазными спусками в различных гидрометеорологических условиях. Поддерживал продуктивную атмосферу в команде с людьми с разными бекграундами. Научился сохранять спокойствие в любой ситуации и работать в условиях повышенной опасности, а также работать с людьми в состоянии стресса.
-          </p>
-        </li>
-      </ul>
-    </>
-  )
-}
-function Skills() {
-  return (
-    <>
-      <h2>Навыки</h2>
-      <ul>
-        <li>
-          JavaScript
-        </li>
-        <li>
-          HTML/CSS (LESS, SASS)
-        </li>
-        <li>
-          React
-        </li>
-        <li>
-          Адаптивная и семантическая верстка по БЭМ
-        </li>
-        <li>
-          GULP, WebPack
-        </li>
-        <li>
-          Figma
-        </li>
-        <li>
-          Git
-        </li>
-      </ul>
-    </>
-  )
-}
+import React, { useState } from "react";
+import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
+import CvRu from "./CvRu";
+import CvEn from "./CvEn";
 
 export default function Cv() {
+  //todo init
+  const [lang, setLang] = useState("ru");
+  function LangSelector() {
+    return (
+      <FormControl sx={{ minWidth: 150 }}>
+        <InputLabel id="lang-label">Language</InputLabel>
+        <Select
+          labelId="lang-label"
+          id="lang"
+          value={lang}
+          label="Language"
+          onChange={(event) => {
+            setLang(event.target.value);
+          }}
+        >
+          <MenuItem value={"en"}>English</MenuItem>
+          <MenuItem value={"ru"}>Russian</MenuItem>
+        </Select>
+      </FormControl>
+    );
+  }
   return (
-    <div>
-      <About/>
-      <article>
-        <Educational/>
-        <Experience/>
-        <Skills/>
-      </article>
-    </div>
-  )
+    <>
+      <LangSelector />
+      {lang === "en" ? <CvEn /> : <CvRu />}
+    </>
+  );
 }
