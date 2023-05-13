@@ -4,6 +4,8 @@ import {
   CardContent,
   Button,
   Typography,
+  Chip,
+  Stack,
 } from "@mui/material/";
 import styled from "styled-components";
 
@@ -12,15 +14,7 @@ const Iframe = styled.iframe`
   height: 400px;
   box-sizing: border-box;
 `;
-const TopicsList = styled.ul`
-  padding: 0;
-  margin: 0;
-  display: flex;
-  list-style: none;
-`;
-const TopicsItem = styled.li`
-  margin-right: 10px;
-`;
+
 export default function ImgMediaCard({
   name,
   description,
@@ -32,7 +26,9 @@ export default function ImgMediaCard({
     if (depurl) {
       return (
         <a href={depurl}>
-          <Button size="small">Deploy</Button>
+          <Button variant="outlined" size="small">
+            Deploy
+          </Button>
         </a>
       );
     }
@@ -41,7 +37,9 @@ export default function ImgMediaCard({
     if (giturl) {
       return (
         <a href={giturl}>
-          <Button size="small">GitHub</Button>
+          <Button variant="outlined" size="small">
+            GitHub
+          </Button>
         </a>
       );
     }
@@ -51,14 +49,15 @@ export default function ImgMediaCard({
       return <Iframe src={depurl} loading="lazy" />;
     }
   }
+
   function Topics() {
     if (topics) {
       return (
-        <TopicsList>
+        <Stack direction="row" spacing={1}>
           {topics.map((topic, index) => {
-            return <TopicsItem key={index}>{topic}</TopicsItem>;
+            return <Chip key={index} label={topic} variant="outlined" />;
           })}
-        </TopicsList>
+        </Stack>
       );
     }
   }
@@ -66,13 +65,13 @@ export default function ImgMediaCard({
   return (
     <Card sx={{ margin: 1 }}>
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h6" component="div">
           {name}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body6" color="text.secondary" component="p" mb={2}>
           {description}
-          <Topics />
         </Typography>
+        <Topics />
       </CardContent>
       <Preview />
       <CardActions>
