@@ -7,7 +7,7 @@ const DateIntervals = styled.p`
 `;
 export default function Educational({ lang }) {
   return (
-    <>
+    <article>
       <h2>{data.education.title[lang].toUpperCase()}</h2>
       <ul>
         {data.education.list.map((i, index) => {
@@ -26,6 +26,6 @@ export default function Educational({ lang }) {
           );
         })}
       </ul>
-    </>
+    </article>
   );
 }

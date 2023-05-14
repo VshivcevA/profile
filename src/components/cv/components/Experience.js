@@ -10,7 +10,7 @@ const Paragraph = styled.li`
 `;
 export default function Experience({ lang }) {
   return (
-    <>
+    <article>
       <h2>{data.experience.title[lang].toUpperCase()}</h2>
       <ul>
         {data.experience.list.map((i, index) => {
@@ -28,6 +28,6 @@ export default function Experience({ lang }) {
           );
         })}
       </ul>
-    </>
+    </article>
   );
 }

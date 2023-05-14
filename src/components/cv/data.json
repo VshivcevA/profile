@@ -15,8 +15,8 @@
       "whatsapp": "https://wa.me/79817091960"
     },
     "about": {
-      "en": "Beginner frontend developer looking for a job position where I could\n        continue my professional development. I am always eager to get the job\n        done, and I am a good teamplayer, but I also strive to be an autonomous\n        figure. Currently I am studying TypeScript, and planning to explore\n        backend technologies next.",
-      "ru": "Начинающий frontend разработчик в поиске позиции, на которой смогу\n        продолжить свое развитие как специалиста. Стремлюсь всегда доводить дело\n        до конца, хорошо работаю как в команде, так и самостоятельно. В данный\n        момент изучаю TypeScript, далее планирую погружаться в backend."
+      "en": "Beginner frontend developer looking for a job position where I could continue my professional development. I am always eager to get the job done, and I am a good teamplayer, but I also strive to be an autonomous figure. Currently I am studying TypeScript, and planning to explore backend technologies next.",
+      "ru": "Начинающий frontend разработчик в поиске позиции, на которой смогу продолжить свое развитие как специалиста. Стремлюсь всегда доводить дело до конца, хорошо работаю как в команде, так и самостоятельно. В данный момент изучаю TypeScript, далее планирую погружаться в backend."
     }
   },
   "education": {
@@ -31,21 +31,21 @@
           "ru": "Апрель - сентябрь 2022"
         },
         "des": {
-          "en": "Frontend developer specialization program, HTML Academy Successfully\n            executed 3 study projects:",
-          "ru": "Программа “Профессия frontend разработчик”, HTML Academy За 6\n            месяцев успешно выполнил три учебных проекта:"
+          "en": "Frontend developer specialization program, HTML Academy Successfully executed 3 study projects:",
+          "ru": "Программа “Профессия frontend разработчик”, HTML Academy За 6 месяцев успешно выполнил три учебных проекта:"
         },
         "list": [
           {
             "en": "Online shop template using HTML and CSS",
-            "ru": "Шаблон для интернет-магазина с использованием базового HTML и\n                CSS."
+            "ru": "Шаблон для интернет-магазина с использованием базового HTML и CSS."
           },
           {
-            "en": "Landing page for a touristic town using WebPack/GULP, SASS/LESS\n                and adaptive layout.",
-            "ru": " Сайт-визитка туристического города где применил сборщик\n                WebPack/GULP, препроцессор SASS/LESS, адаптивную верстку."
+            "en": "Landing page for a touristic town using WebPack/GULP, SASS/LESS and adaptive layout.",
+            "ru": " Сайт-визитка туристического города где применил сборщик WebPack/GULP, препроцессор SASS/LESS, адаптивную верстку."
           },
           {
             "en": "Social media website",
-            "ru": "Сайт-клон соцсети с функциональностью загрузки API, обработки\n                изображений посредством JS."
+            "ru": "Сайт-клон соцсети с функциональностью загрузки API, обработки изображений посредством JS."
           }
         ]
       },
@@ -55,8 +55,8 @@
           "ru": "2012 - 2015"
         },
         "des": {
-          "en": "Shipbuilding department of Saint Petersburg State Marine Technical\n            \n            University Studied engineering and shipbuilding technologies.",
-          "ru": "Кафедра кораблестроения, CПбГМТУ Изучал дисциплины в сфере\n            инженерного дела, технологии кораблестроения."
+          "en": "Shipbuilding department of Saint Petersburg State Marine Technical University Studied engineering and shipbuilding technologies.",
+          "ru": "Кафедра кораблестроения, CПбГМТУ Изучал дисциплины в сфере инженерного дела, технологии кораблестроения."
         }
       }
     ]
@@ -86,12 +86,12 @@
             "ru": "Совершенствовал полученные навыки в HTML, SCSS, JS."
           },
           {
-            "en": "Studied and used in practice React Hooks/Routing/Context, Redux in\n              a team, under mentorship.",
-            "ru": "В команде под руководством наставников осваивал и использовал на\n            практике технологии: React Hooks/Routing/Context, Redux."
+            "en": "Studied and used in practice React Hooks/Routing/Context, Redux in a team, under mentorship.",
+            "ru": "В команде под руководством наставников осваивал и использовал на  практике технологии: React Hooks/Routing/Context, Redux."
           },
           {
             "en": "Learned Unit testing, Next.js, PropTypes.",
-            "ru": "Ознакомился с технологиями: Unit-тестирование, Next.js, статическая\n            типизация, PropTypes."
+            "ru": "Ознакомился с технологиями: Unit-тестирование, Next.js, статическая типизация, PropTypes."
           }
         ]
       },
@@ -102,7 +102,7 @@
         },
         "position": {
           "en": "Head of divers group / Diver",
-          "ru": "Начальник водолазной станции/водолаз"
+          "ru": "Начальник водолазной станции / водолаз"
         },
         "company": {
           "en": "Search and rescue service",
@@ -110,16 +110,16 @@
         },
         "employments": [
           {
-            "en": "Managed a group of 8 team members, took part and led dives in\n              various meteorological conditions.",
-            "ru": "Руководил группой из 8 человек, принимал участие и командовал\n            водолазными спусками в различных гидрометеорологических условиях."
+            "en": "Managed a group of 8 team members, took part and led dives in various meteorological conditions.",
+            "ru": "Руководил группой из 8 человек, принимал участие и командовал водолазными спусками в различных гидрометеорологических условиях."
           },
           {
-            "en": "Ensured a productive\n              environment in a team of people of various backgrounds.",
-            "ru": "Поддерживал продуктивную атмосферу в команде с людьми с разными\n            бекграундами."
+            "en": "Ensured a productive environment in a team of people of various backgrounds.",
+            "ru": "Поддерживал продуктивную атмосферу в команде с людьми с разными бекграундами."
           },
           {
-            "en": "Learned to\n              perform well under stress and manage the stress of team members,\n              and work in dangerous and unpreductable conditions.",
-            "ru": "Научился сохранять спокойствие в любой ситуации и\n            работать в условиях повышенной опасности, а также работать с людьми\n            в состоянии стресса."
+            "en": "Learned to perform well under stress and manage the stress of team members, and work in dangerous and unpreductable conditions.",
+            "ru": "Научился сохранять спокойствие в любой ситуации и работать в условиях повышенной опасности, а также работать с людьми в состоянии стресса."
           }
         ]
       }
@@ -131,7 +131,7 @@
       "ru": "Навыки"
     },
     "list": [
-      "JavaScript",
+      "JavaScript, TypeScript",
       "React",
       "Redux",
       "HTML, CSS(LESS, SASS), StyledComponent",

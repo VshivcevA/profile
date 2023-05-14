@@ -23,8 +23,6 @@ export default function About({ lang }) {
         <a href={data.person.contacts.whatsapp}>WhatsApp</a>
       </p>
       <p>{data.person.about[lang]}</p>
-
-      <p>{data.person.about[lang]}</p>
     </article>
   );
 }
