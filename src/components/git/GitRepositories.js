@@ -11,7 +11,7 @@ function GitRepositories() {
           return response.json();
         })
         .then((data) => {
-          sessionStorage.setItem("GitRepos", JSON.stringify(data));
+          // sessionStorage.setItem("GitRepos", JSON.stringify(data));
           setGitRepos(data);
         });
     }
@@ -25,11 +25,11 @@ function GitRepositories() {
       <div>
         <ImgMediaCard
           name={"React"}
-          description={"Данный сайт-портфолио сделан на базовом React"}
+          description={"This portfolio website is powered by React"}
         />
         <ImgMediaCard
           name={"CodeWars"}
-          description={"Задачи на Vanilla JS c codewars.com"}
+          description={"Challenges from codewars.com"}
           giturl={"https://github.com/VshivcevA/CodeWars"}
         />
         {gitRepos

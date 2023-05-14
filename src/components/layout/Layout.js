@@ -30,7 +30,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <footer>
-        <p>Разработано Вшивцев А.</p>
+        <p>Aleksandr Vshivrsev</p>
       </footer>
     </>
   );
