@@ -69,6 +69,34 @@
     "list": [
       {
         "date": {
+          "en": "July 2022 — Now",
+          "ru": "Июль 2022 — Настоящее время"
+        },
+        "position": {
+          "en": "Frontend Developer / Web master",
+          "ru": "Frontend Developer / Web master"
+        },
+        "company": {
+          "en": "FastWeb",
+          "ru": "FastWeb"
+        },
+        "employments": [
+          {
+            "en": "",
+            "ru": ""
+          },
+          {
+            "en": "",
+            "ru": ""
+          },
+          {
+            "en": "",
+            "ru": ""
+          }
+        ]
+      },
+      {
+        "date": {
           "en": "October 2022 — February 2023",
           "ru": "Октябрь 2022 — Февраль 2023"
         },
