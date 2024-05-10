@@ -160,8 +160,8 @@
     },
     "list": [
       "JavaScript, TypeScript",
-      "React, RTK",
-      "nodejs",
+      "React",
+      "Redux",
       "HTML, CSS(LESS, SASS), StyledComponent",
       {
         "en": "Cross-browser & adaptive website coding",
@@ -169,8 +169,7 @@
       },
       "GULP, WebPack",
       "Figma",
-      "Git",
-      "and many other things"
+      "Git"
     ]
   }
 }
